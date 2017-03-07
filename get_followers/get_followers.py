@@ -39,7 +39,7 @@ with open(csv_filename, 'w') as csvfile:
     # Initialize the CSV dictionary writer with the field names defined earlier
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-    # Write the fiel dnames as a header row in the CSV file
+    # Write the field names as a header row in the CSV file
     writer.writeheader()
 
     # Loop through the list of followers and write the Twitter ID, Screen Name,

@@ -30,10 +30,12 @@ retained_followers = followers1_set.intersection(followers2_set)
 lost_followers = followers1_set.difference(followers2_set)
 new_followers = followers2_set.difference(followers1_set)
 
-# Print the new followers, if any, and lost followers, if any
+# Print the new followers, if any
 if new_followers:
     print('New Followers:')
     print(", ".join(str(follower) for follower in new_followers))
-elif lost_followers:
+
+# Print the lost followers, if any
+if lost_followers:
     print('Lost Followers:')
     print(", ".join(str(follower) for follower in lost_followers))
